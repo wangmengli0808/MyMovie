@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a03e591-cf06-4940-a72a-a1777586ab17" name="Default Changelist" comment="" />
+    <list default="true" id="7a03e591-cf06-4940-a72a-a1777586ab17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movies/src/components/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/components/ListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/https/HttpsCommon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/demo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-home-gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-movie-gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-movie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-search1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-search_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-wode-gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/img/icon-wode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/pages/Detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/pages/Mall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/pages/Mine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/pages/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/pages/Shelf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/styles/Common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/src/styles/Item.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +34,10 @@
     <session id="-1078888287">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,10 +79,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MyMovie/package.json">
+        <entry file="file://$PROJECT_DIR$/movies/src/pages/Detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="-2393">
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,18 +123,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/MyMovie/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/MyMovie/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="801" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -157,7 +173,20 @@
             <path>
               <item name="MyMovie" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyMovie" type="462c0819:PsiDirectoryNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMovie" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyMovie" type="462c0819:PsiDirectoryNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMovie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyMovie" type="462c0819:PsiDirectoryNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,7 +257,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="801" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22430556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,37 +294,18 @@
     <entry file="file://$PROJECT_DIR$/App.js" />
     <entry file="file://$PROJECT_DIR$/index.ios.js" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/MyMovie/index.ios.js">
+    <entry file="file://$PROJECT_DIR$/MyMovie/index.ios.js" />
+    <entry file="file://$PROJECT_DIR$/MyMovie/app.json" />
+    <entry file="file://$PROJECT_DIR$/MyMovie/src/img/demo.jpg" />
+    <entry file="file://$PROJECT_DIR$/MyMovie/App.js" />
+    <entry file="file://$PROJECT_DIR$/MyMovie/src/pages/Detail.js" />
+    <entry file="file://$PROJECT_DIR$/MyMovie/package.json" />
+    <entry file="file://$PROJECT_DIR$/movies/src/pages/Detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovie/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovie/src/img/demo.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovie/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovie/src/pages/Detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyMovie/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="-2393">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
