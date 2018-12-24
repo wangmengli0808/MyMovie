@@ -14,19 +14,19 @@ import DetailScreen from './src/pages/Detail';
 import SearchScreen from './src/pages/Search';
 
 const TabNavigator = createBottomTabNavigator({
-  Mall: {
-    screen: SearchScreen,
-    navigationOptions: () => ({
-      title: `首页`,
-      header: null,
-      tabBarIcon: ({ focused, tintColor }) => (
-        <Image
-          style={{width: 26, height: 26}}
-          source={focused ? require('./src/img/icon-home.png') : require('./src/img/icon-home-gray.png')}
-        />
-      )
-    })
-  },
+  // Mall: {
+  //   screen: MallScreen,
+  //   navigationOptions: () => ({
+  //     title: `首页`,
+  //     header: null,
+  //     tabBarIcon: ({ focused, tintColor }) => (
+  //       <Image
+  //         style={{width: 26, height: 26}}
+  //         source={focused ? require('./src/img/icon-home.png') : require('./src/img/icon-home-gray.png')}
+  //       />
+  //     )
+  //   })
+  // },
   Shelf: {
     screen: ShelfScreen,
     navigationOptions: () => ({
@@ -91,7 +91,10 @@ const AppNavigator = createStackNavigator({
       // )
     })
   },
-  Search: { screen: SearchScreen }
+  Search: {
+    screen: SearchScreen,
+    navigationOptions: ({navigation}) => ({header: null}), // 去掉头部
+  }
 });
 
 export default createAppContainer(AppNavigator);

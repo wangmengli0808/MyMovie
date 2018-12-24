@@ -9,64 +9,11 @@ import {
   Dimensions, FlatList
 } from 'react-native';
 
-import Swiper from 'react-native-swiper';
 import common from '../styles/Common';
 import Item from '../components/Item';
+import Banner from '../components/Banner';
 
-const { width, height } = Dimensions.get('window');
-
-const averageWidth = width - 20;
-
-const imageWidth = averageWidth * 0.27;
-
-const imageHeight = imageWidth * 1.3;
-
-const timestamp = new Date().getTime();
-
-const styles = StyleSheet.create({
-  search: {
-    height: 35,
-    backgroundColor: '#fff',
-    opacity: .7,
-    borderRadius: 18,
-    overflow: 'hidden',
-
-    position: 'absolute',
-    top: 10,
-    left: 50,
-    right: 50,
-    zIndex: 9,
-  },
-  searchText: {
-    height: 35,
-    lineHeight: 35,
-    paddingHorizontal: 15,
-  },
-  wrapper: {
-  },
-  swiperItem: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#fff'
-  },
-  imageStyle: {
-    flex: 1,
-    width: width
-  },
-  itemList: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
-    paddingLeft: 15
-  },
-  boxTitle: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 15,
-    paddingHorizontal: 15
-  },
-});
+// const timestamp = new Date().getTime();
 
 export default class Mall extends Component {
   constructor(props) {
@@ -130,31 +77,7 @@ export default class Mall extends Component {
         >
           <Text style={styles.searchText}>输入电影名称</Text>
         </TouchableOpacity>
-        <View style={{height: 200}}>
-          <Swiper
-            style={styles.wrapper}
-            height={230}
-            horizontal={true}
-            autoplay={true}
-            autoplayTimeout={3}
-            loop={true}
-            paginationStyle={{bottom: 10}}
-            showsPagination={true}
-            index={0}
-            onMomentumScrollEnd={(e, state, context) => console.log('index:', state.index)}
-            dotStyle={{backgroundColor: '#fff', width: 8, height: 6,}}
-            activeDotStyle={{backgroundColor: '#fe4b46', width: 15, height: 6}}>
-            <View style={styles.swiperItem}>
-              <Image style={styles.imageStyle} source={require('../img/demo.jpg')}/>
-            </View>
-            <View style={styles.swiperItem}>
-              <Image style={styles.imageStyle} source={require('../img/demo.jpg')}/>
-            </View>
-            <View style={styles.swiperItem}>
-              <Image style={styles.imageStyle} source={require('../img/demo.jpg')}/>
-            </View>
-          </Swiper>
-        </View>
+        <Banner />
         <View>
           <View style={styles.boxTitle}>
             <Text style={{fontSize: 18,fontWeight: 'bold',}}>正在热映</Text>
@@ -184,4 +107,38 @@ export default class Mall extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  search: {
+    height: 35,
+    backgroundColor: '#fff',
+    opacity: .7,
+    borderRadius: 18,
+    overflow: 'hidden',
+
+    position: 'absolute',
+    top: 10,
+    left: 50,
+    right: 50,
+    zIndex: 9,
+  },
+  searchText: {
+    height: 35,
+    lineHeight: 35,
+    paddingHorizontal: 15,
+  },
+  itemList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    paddingLeft: 15
+  },
+  boxTitle: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 15,
+    paddingHorizontal: 15
+  },
+});
 

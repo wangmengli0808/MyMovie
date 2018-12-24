@@ -71,11 +71,49 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center'
   },
+  starImg: {
+    width: 16,
+    height: 16,
+    position: 'relative',
+    top: 3
+  },
   score: {
     fontSize: 16,
     color: '#F9962C'
   }
 });
+
+const renderStars = (stars) => {
+  const total = 5;
+  let full, half, empty;
+  full = parseInt(stars[0]);
+  if (parseInt(stars[1]) === 5) {
+    full++;
+    half= 0;
+  } else {
+    half = 1;
+  }
+  empty = total - full -half;
+  const results = [];
+  let i;
+  if (stars === '00') {
+    for (let k = 0;k < total;k++) {
+      results.push(<Image key={k} source={require('../img/icon-star-empty.png')} style={styles.starImg}/>)
+    }
+  } else {
+    for (i = 0;i < full;i++) {
+      results.push(<Image key={i} source={require('../img/icon-star-full.png')} style={styles.starImg}/>)
+    }
+    if (half) {
+      results.push(<Image key={i++} source={require('../img/icon-star-half.png')} style={styles.starImg}/>)
+    }
+    for (let j = 0;j < empty;j++) {
+      results.push(<Image key={j+i+1} source={require('../img/icon-star-empty.png')} style={styles.starImg}/>)
+    }
+  }
+
+  return results;
+};
 
 const ListItem = (props) => {
   const { item, onPress } = props;
@@ -90,7 +128,7 @@ const ListItem = (props) => {
           <View style={styles.star_box}>
             <View style={styles.star}>
               <Text style={{fontSize: 14}}>评分</Text>
-              <Text style={styles.score}>{item.rating ? item.rating.stars : 0}</Text>
+              <Text style={styles.score}>{renderStars(item.rating.stars)}</Text>
             </View>
             <View style={styles.star}>
               <Text style={styles.score}>{item.rating ? item.rating.collect_count : 0}</Text>

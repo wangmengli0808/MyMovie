@@ -9,6 +9,8 @@ console.ignoredYellowBox = ['Warning: Can only update'];
 console.ignoredYellowBox = ['Warning: isMounted'];
 console.ignoredYellowBox = ['Method '];
 console.ignoredYellowBox = ['Required  '];
-console.ignoredYellowBox = ['RCTBridge  '];
+console.ignored
+YellowBox = ['RCTBridge  '];
+console.ignoredYellowBox = ['Possible  '];
 
 AppRegistry.registerComponent(appName, () => App);
